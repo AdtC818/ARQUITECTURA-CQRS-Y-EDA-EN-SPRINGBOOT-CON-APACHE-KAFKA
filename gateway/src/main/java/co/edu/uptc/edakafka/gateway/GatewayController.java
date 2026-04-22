@@ -18,8 +18,11 @@ public class GatewayController {
 
     private final WebClient webClient;
 
-    @Value("${spring.gateway.backend-url:http://edakafka:8080}")
-    private String backendUrl;
+    @Value("${spring.gateway.command-url:http://localhost:11080}")
+    private String commandUrl;
+
+    @Value("${spring.gateway.query-url:http://localhost:12080}")
+    private String queryUrl;
 
     public GatewayController(WebClient.Builder webClientBuilder) {
         this.webClient = webClientBuilder.build();
@@ -38,7 +41,8 @@ public class GatewayController {
         HttpMethod method = exchange.getRequest().getMethod();
         String path = exchange.getRequest().getURI().getRawPath();
         String query = exchange.getRequest().getURI().getRawQuery();
-        String url = backendUrl + path + (query != null ? "?" + query : "");
+        String baseUrl = (method == HttpMethod.GET) ? queryUrl : commandUrl;
+        String url = baseUrl + path + (query != null ? "?" + query : "");
 
         if (method == HttpMethod.GET || method == HttpMethod.DELETE) {
             return webClient.method(method)

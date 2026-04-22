@@ -5,7 +5,14 @@ spring:
   application:
     name: api-gateway
   gateway:
-    backend-url: http://edakafka:8080
+    # Servicio de escritura (POST, PUT, DELETE, PATCH) - cqrscontroller
+    # IMPORTANTE: al ejecutar en otra máquina, cambia localhost por la IP LAN
+    # de la máquina donde corre cqrscontroller. Ej: http://192.168.1.X:11080
+    command-url: http://localhost:11080
+    # Servicio de lectura (GET) - cqrsquery
+    # IMPORTANTE: al ejecutar en otra máquina, cambia localhost por la IP LAN
+    # de la máquina donde corre cqrsquery. Ej: http://192.168.1.X:12080
+    query-url: http://localhost:12080
 
 management:
   endpoints:

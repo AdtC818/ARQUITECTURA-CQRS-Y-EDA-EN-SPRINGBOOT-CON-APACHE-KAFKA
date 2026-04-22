@@ -1,0 +1,12 @@
+co\edu\uptc\cqrscontroller\model\Login.class
+co\edu\uptc\cqrscontroller\CqrscontrollerApplication.class
+co\edu\uptc\cqrscontroller\controller\LoginController.class
+co\edu\uptc\cqrscontroller\repository\LoginRepository.class
+co\edu\uptc\cqrscontroller\utils\JsonUtils.class
+co\edu\uptc\cqrscontroller\service\CustomerEventProducer.class
+co\edu\uptc\cqrscontroller\repository\CustomerRepository.class
+co\edu\uptc\cqrscontroller\controller\CustomerController.class
+co\edu\uptc\cqrscontroller\model\Customer.class
+co\edu\uptc\cqrscontroller\service\LoginEventProducer.class
+co\edu\uptc\cqrscontroller\service\CustomerService.class
+co\edu\uptc\cqrscontroller\service\LoginService.class

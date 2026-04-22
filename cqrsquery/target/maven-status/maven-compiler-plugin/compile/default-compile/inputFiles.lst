@@ -1,0 +1,12 @@
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrsquery\src\main\java\co\edu\uptc\cqrsquery\controller\CustomerQueryController.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrsquery\src\main\java\co\edu\uptc\cqrsquery\controller\LoginQueryController.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrsquery\src\main\java\co\edu\uptc\cqrsquery\CqrsqueryApplication.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrsquery\src\main\java\co\edu\uptc\cqrsquery\model\Customer.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrsquery\src\main\java\co\edu\uptc\cqrsquery\model\Login.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrsquery\src\main\java\co\edu\uptc\cqrsquery\repository\CustomerRepository.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrsquery\src\main\java\co\edu\uptc\cqrsquery\repository\LoginRepository.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrsquery\src\main\java\co\edu\uptc\cqrsquery\service\CustomerEventConsumer.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrsquery\src\main\java\co\edu\uptc\cqrsquery\service\CustomerService.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrsquery\src\main\java\co\edu\uptc\cqrsquery\service\LoginEventConsumer.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrsquery\src\main\java\co\edu\uptc\cqrsquery\service\LoginService.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrsquery\src\main\java\co\edu\uptc\cqrsquery\utils\JsonUtils.java

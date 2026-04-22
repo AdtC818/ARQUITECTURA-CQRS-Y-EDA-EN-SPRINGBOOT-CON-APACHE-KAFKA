@@ -1,0 +1,12 @@
+co\edu\uptc\cqrsquery\controller\CustomerQueryController.class
+co\edu\uptc\cqrsquery\service\LoginService.class
+co\edu\uptc\cqrsquery\service\CustomerService.class
+co\edu\uptc\cqrsquery\CqrsqueryApplication.class
+co\edu\uptc\cqrsquery\repository\LoginRepository.class
+co\edu\uptc\cqrsquery\service\LoginEventConsumer.class
+co\edu\uptc\cqrsquery\model\Login.class
+co\edu\uptc\cqrsquery\repository\CustomerRepository.class
+co\edu\uptc\cqrsquery\controller\LoginQueryController.class
+co\edu\uptc\cqrsquery\utils\JsonUtils.class
+co\edu\uptc\cqrsquery\service\CustomerEventConsumer.class
+co\edu\uptc\cqrsquery\model\Customer.class

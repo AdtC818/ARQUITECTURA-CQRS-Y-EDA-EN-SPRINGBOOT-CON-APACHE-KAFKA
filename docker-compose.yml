@@ -16,6 +16,9 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      # IMPORTANTE: cuando corras cqrsquery en OTRA máquina, cambia localhost por 
+      # la IP LAN de esta máquina (ej: 192.168.1.X). Encuentra tu IP con `ipconfig` 
+      # en Windows o `ip a` en Linux.
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
@@ -33,20 +36,32 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
 
-  edakafka:
-    build:
-      context: ./edakafka
-      dockerfile: Dockerfile
+  mongodb:
+    container_name: orderBD
+    image: mongo:latest
     ports:
-      - 8080:8080
-    depends_on:
-      - mysql
-      - kafka
+      - "27017:27017"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/orders?serverTimezone=GMT-5
-      - SPRING_DATASOURCE_USERNAME=orders
-      - SPRING_DATASOURCE_PASSWORD=uptc2026
-      - SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:9092
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: UPTC2024
+      MONGO_INITDB_DATABASE: CustomerOrderDB
+
+# SERVICIO LEGACY DESACTIVADO - reemplazado por cqrscontroller y cqrsquery
+# Descomentar solo si se necesita el servicio original para referencia
+#  edakafka:
+#    build:
+#      context: ./edakafka
+#      dockerfile: Dockerfile
+#    ports:
+#      - 8080:8080
+#    depends_on:
+#      - mysql
+#      - kafka
+#    environment:
+#      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/orders?serverTimezone=GMT-5
+#      - SPRING_DATASOURCE_USERNAME=orders
+#      - SPRING_DATASOURCE_PASSWORD=uptc2026
+#      - SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:9092
 
   gateway:
     build:
@@ -55,7 +70,7 @@ services:
     ports:
       - 8081:8081
     depends_on:
-      - edakafka
+      # - edakafka
 
 volumes:
   mysql_data:

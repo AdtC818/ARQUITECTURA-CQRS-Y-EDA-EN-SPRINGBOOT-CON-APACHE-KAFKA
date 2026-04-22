@@ -1,0 +1,12 @@
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrscontroller\src\main\java\co\edu\uptc\cqrscontroller\controller\CustomerController.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrscontroller\src\main\java\co\edu\uptc\cqrscontroller\controller\LoginController.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrscontroller\src\main\java\co\edu\uptc\cqrscontroller\CqrscontrollerApplication.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrscontroller\src\main\java\co\edu\uptc\cqrscontroller\model\Customer.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrscontroller\src\main\java\co\edu\uptc\cqrscontroller\model\Login.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrscontroller\src\main\java\co\edu\uptc\cqrscontroller\repository\CustomerRepository.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrscontroller\src\main\java\co\edu\uptc\cqrscontroller\repository\LoginRepository.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrscontroller\src\main\java\co\edu\uptc\cqrscontroller\service\CustomerEventProducer.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrscontroller\src\main\java\co\edu\uptc\cqrscontroller\service\CustomerService.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrscontroller\src\main\java\co\edu\uptc\cqrscontroller\service\LoginEventProducer.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrscontroller\src\main\java\co\edu\uptc\cqrscontroller\service\LoginService.java
+C:\Software2C\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\ARQUITECTURA-CQRS-Y-EDA-EN-SPRINGBOOT-CON-APACHE-KAFKA\cqrscontroller\src\main\java\co\edu\uptc\cqrscontroller\utils\JsonUtils.java
