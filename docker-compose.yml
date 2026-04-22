@@ -44,6 +44,36 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: UPTC2024
       MONGO_INITDB_DATABASE: CustomerOrderDB
 
+  cqrscontroller:
+    build:
+      context: ./cqrscontroller
+      dockerfile: Dockerfile
+    ports:
+      - "11080:11080"
+    depends_on:
+      - mysql
+      - kafka
+    environment:
+      # Cambia localhost por la IP LAN si corres cqrsquery en otra máquina
+      - KAFKA_HOST=kafka
+      - MYSQL_HOST=mysql
+    restart: on-failure
+
+  cqrsquery:
+    build:
+      context: ./cqrsquery
+      dockerfile: Dockerfile
+    ports:
+      - "12080:12080"
+    depends_on:
+      - mongodb
+      - kafka
+    environment:
+      # Cambia localhost por la IP LAN si corres cqrscontroller en otra máquina
+      - KAFKA_HOST=kafka
+      - MONGO_HOST=mongodb
+    restart: on-failure
+
 # SERVICIO LEGACY DESACTIVADO - reemplazado por cqrscontroller y cqrsquery
 # Descomentar solo si se necesita el servicio original para referencia
 #  edakafka:
@@ -68,7 +98,8 @@ services:
     ports:
       - 8081:8081
     depends_on:
-      # - edakafka
+      - cqrscontroller
+      - cqrsquery
 
 volumes:
   mysql_data:
