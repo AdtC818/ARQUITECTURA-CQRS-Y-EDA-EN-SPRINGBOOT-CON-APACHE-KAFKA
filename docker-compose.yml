@@ -29,10 +29,8 @@ services:
     ports:
       - 3307:3306
     environment:
-      - MYSQL_ROOT_PASSWORD=uptc2026
+      - MYSQL_ROOT_PASSWORD=UPTC2024
       - MYSQL_DATABASE=orders
-      - MYSQL_USER=orders
-      - MYSQL_PASSWORD=uptc2026
     volumes:
       - mysql_data:/var/lib/mysql
 
