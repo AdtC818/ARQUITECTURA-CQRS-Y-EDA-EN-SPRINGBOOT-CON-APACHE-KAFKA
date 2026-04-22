@@ -16,10 +16,14 @@ public class JsonUtils {
     }
 
     public static <T> T fromJson(String json, Class<T> clazz) {
-        try {
-            return objectMapper.readValue(json, clazz);
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException("Error converting JSON to object", e);
+    try {
+        // Esto limpia el JSON si llega con comillas dobles al inicio y al final
+        if (json != null && json.startsWith("\"") && json.endsWith("\"")) {
+            json = json.substring(1, json.length() - 1).replace("\\\"", "\"");
         }
+        return objectMapper.readValue(json, clazz);
+    } catch (Exception e) {
+        throw new RuntimeException("Error convirtiendo JSON: " + json, e);
     }
+}
 }

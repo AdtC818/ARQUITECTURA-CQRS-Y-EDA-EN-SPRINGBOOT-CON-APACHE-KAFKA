@@ -25,9 +25,9 @@ public class OrderController {
         return ResponseEntity.ok(updatedOrder);
     }
 
-    @PostMapping("/delorder")
-    public ResponseEntity<Void> deleteOrder(@RequestBody Order order) {
-        orderService.deleteOrder(order);
-        return ResponseEntity.ok().build();
+    @PostMapping("/deleteorder")
+    public ResponseEntity<String> deleteOrder(@RequestBody Order order) {
+        orderService.deleteOrder(order); // Usamos el service que ya está inyectado arriba
+        return ResponseEntity.ok("Orden eliminada");
     }
 }
