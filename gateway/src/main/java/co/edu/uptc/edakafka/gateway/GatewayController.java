@@ -28,7 +28,7 @@ public class GatewayController {
         this.webClient = webClientBuilder.build();
     }
 
-    @RequestMapping(value = {"/customer/**", "/api/logins/**"}, method = {
+    @RequestMapping(value = {"/customer/**", "/order/**", "/api/logins/**"}, method = {
             RequestMethod.GET,
             RequestMethod.POST,
             RequestMethod.PUT,
